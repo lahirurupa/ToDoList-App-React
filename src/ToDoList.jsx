@@ -5,27 +5,30 @@ function ToDoList() {
         <div className='To-Do-List'>
             <h1>To-Do List</h1>
             
-            <input type="text" placeholder="Add a task" />
-            <button>Add</button>
+            <div className='Add-Task'>
+                <input type="text" placeholder="Add a task" />
+                <button>Add</button>
+            </div>
+            
 
-            <ul>
+            <ul className='Task-List'>
                 <li>
-                    Task 1
-                    <button>Delete</button>
-                    <button>👆</button>
-                    <button>👇</button>
+                    <span className='text'>Breakfast</span>
+                    <button className='delete-button'>Delete</button>
+                    <button className='moveUp-button'>👆</button>
+                    <button className='moveDown-button'>👇</button>
                 </li>
                 <li>
-                    Task 2
-                    <button>Delete</button>
-                    <button>👆</button>
-                    <button>👇</button>
+                    <span className='text'>Task 1</span>
+                    <button className='delete-button'>Delete</button>
+                    <button className='moveUp-button'>👆</button>
+                    <button className='moveDown-button'>👇</button>
                 </li>
                 <li>
-                    Task 3
-                    <button>Delete</button>
-                    <button>👆</button>
-                    <button>👇</button>
+                    <span className='text'>Task 1</span>
+                    <button className='delete-button'>Delete</button>
+                    <button className='moveUp-button'>👆</button>
+                    <button className='moveDown-button'>👇</button>
                 </li>
             </ul>
         </div>
