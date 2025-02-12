@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    background-color: #282c34;
+}
+.To-Do-List{
+  margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+}
+.To-Do-List h1{
+    color: white;
+    font-size: 3rem;
+    margin: 1rem;
+}
+.Add-Task input{
+    padding: 1rem;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+}
+.Add-Task button{
+    padding: 1rem;
+    margin: 1rem;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    background-color: #61dafb;
+    color: white;
+    cursor: pointer;
+}
+.Task-List{
+    list-style: none;
+    padding: 0;
+}
+.Task-List li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 450px;
+    border-radius: 5px;
+    background-color: hsla(193, 95%, 68%, 0.3);
+    color: white;
+}
+.text{
+  margin-left: 5px;
+  flex: 1;
+  font-size: larger;
+  font-weight: bold;
+}
+.Task-List li:nth-child(odd){
+    background-color: hsla(193, 95%, 68%, 0.5);
+}
+.delete-button{
+    background-color: hsla(0, 100%, 50%, 0.75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.delete-button:hover{
+    background-color: hsla(0, 100%, 50%, 0.55);
+}
+.moveUp-button{
+    background-color: hsla(146, 90%, 42%, 0.75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.moveDown-button{
+    background-color: hsla(146, 90%, 42%, 0.75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.moveUp-button:hover, .moveDown-button:hover{
+    background-color: hsla(146, 90%, 42%, 0.55);
+}
